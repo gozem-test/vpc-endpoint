@@ -1,3 +1,3 @@
-output "vpc_id" {
-  value = aws_vpc.vpc.id
+output "arn" {
+  value = aws_vpc_endpoint.ssm.arn
 }
