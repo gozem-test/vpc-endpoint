@@ -1,3 +1,3 @@
-output "arn" {
-  value = aws_vpc_endpoint.ssm.arn
+output "arns" {
+  value = values(aws_vpc_endpoint.ssm)[*].arn
 }
